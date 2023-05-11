@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Este título es el que se ve en la pestaña de la página: -->
+    <title>TransForLeaders</title>
+</head>
+
+<!-- Agrego link a CSS con estilos: -->
+<link rel="stylesheet" type="text/css" href="./public/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="./public/css/fonts.css" />
+
+
+<body>
+    <!-- Top header bar: -->
+    <%- include('partials/navbar.ejs') %>
+
+        <!--Cuerpo de página: -->
+        <main>
+
+            <!-- Side bar menu: -->
+            <%- include('partials/sidebar.ejs') %>
+
+                <!-- Main canvas: -->
+                <section class="main-canvas">
+                    <div class="main-canvas-pdf-viewer">
+                        <!-- <embed src="./path/to/your/pdf/document.pdf" type="application/pdf" width="100%" height="600px" /> -->
+                    </div>
+                </section>
+                
+        </main>
+
+        <!--Simple footer: -->
+        <%- include('partials/footer.ejs') %>
+
+
+        <script src="./public/js/sidebarHoverHelp.js"></script>
+
+</body>
+
+</html>
